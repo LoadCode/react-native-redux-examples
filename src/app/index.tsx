@@ -14,9 +14,9 @@ function App() {
     state => state.counter.counterValue,
   );
   const onPressIncrease = () =>
-    dispatch(CounterActions.increaseCounter(counter));
+    dispatch(CounterActions.updateCounter(counter + 1));
   const onPressDecrease = () =>
-    dispatch(CounterActions.decreaseCounter(counter));
+    dispatch(CounterActions.updateCounter(counter - 1));
   return (
     <SafeAreaView style={styles.safearea}>
       <View style={styles.container}>
