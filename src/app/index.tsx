@@ -1,14 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, SafeAreaView, Text} from 'react-native';
+import {useSelector, useDispatch} from 'react-redux';
 
+import {State} from '../interfaces/reduxInterfaces';
+import CounterActions from '../redux/counter/actions';
 import arrow from './assets/arrow.png';
 import styles from './styles';
 import CustomButton from './components/CustomButton';
 
 function App() {
-  const [counter, setCounter] = useState(0);
-  const onPressIncrease = () => setCounter(counter + 1);
-  const onPressDecrease = () => setCounter(counter - 1);
+  const dispatch = useDispatch();
+  const counter = useSelector<State, number>(
+    state => state.counter.counterValue,
+  );
+  const onPressIncrease = () =>
+    dispatch(CounterActions.increaseCounter(counter));
+  const onPressDecrease = () =>
+    dispatch(CounterActions.decreaseCounter(counter));
   return (
     <SafeAreaView style={styles.safearea}>
       <View style={styles.container}>
