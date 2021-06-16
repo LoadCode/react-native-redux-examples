@@ -5,6 +5,7 @@ This repository contains the implementation of a simple React Native application
 The content of this repository is mainly intended to illustrate some basic skills on **configuring**, **managing**, **persisting** and **monitoring** a simple **Redux** state on our _React Native Application_.
 
 ### The Application
+
 The app we develop in this repository consists on a **counter** that increases or decreses its value based on two buttons that the user can press at any time (see UI below).
 
 <img src="./public-images/react-native-redux-counter.png" alt="React Native Counter App" width="300"/>
@@ -27,8 +28,9 @@ The app works this way:
   In this branch we install and configure `Reactotron` to monitor the _Redux_ state and log info from the app.
 - #### redux-persistence:
   In this branch we configure and manage Redux state persistence in the device's filesystem using `async-storage` and `reedux-persist`.
-  
-  
-  
- **Copyright**
- Julio César Echeverri Marulanda
+- #### redux-testing:
+  In this branch we configure React Native Testing Library in the project and develop a basic test for our application.
+
+**Copyright**
+
+Julio César Echeverri Marulanda
