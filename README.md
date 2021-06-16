@@ -5,7 +5,7 @@ This is mainly intended to learn about some basic skills on configuring, managin
 
 A simple mobile application is implemented, just a counter app that increases or decreses the value based on button events (see UI below).
 
-![React Native Counter App](./public-images/react-native-redux-counter.png 'React Native Counter App')
+![React Native Counter App](./public-images/react-native-redux-counter.png 'React Native Counter App' | width=100)
 
 The app works like this:
 
