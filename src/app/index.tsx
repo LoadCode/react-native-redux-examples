@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, SafeAreaView, Text} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
+import {State} from '@interfaces/reduxInterfaces';
+import CounterActions from '@redux/counter/actions';
+import arrow from '@assets/arrow.png';
+import CustomButton from '@components/CustomButton';
 
-import {State} from '../interfaces/reduxInterfaces';
-import CounterActions from '../redux/counter/actions';
-import arrow from './assets/arrow.png';
 import styles from './styles';
-import CustomButton from './components/CustomButton';
 
 function App() {
   const dispatch = useDispatch();
