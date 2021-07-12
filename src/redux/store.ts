@@ -1,5 +1,6 @@
 import {createStore, combineReducers} from 'redux';
-import {State} from '../interfaces/reduxInterfaces';
+import {State} from '@interfaces/reduxInterfaces';
+
 import counter from './counter/reducer';
 
 const reducers = combineReducers<State>({

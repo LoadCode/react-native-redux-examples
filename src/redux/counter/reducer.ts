@@ -1,5 +1,5 @@
 import {createReducer} from 'redux-recompose';
-import {CounterState, Action, State} from '../../interfaces/reduxInterfaces';
+import {CounterState, Action, State} from '@interfaces/reduxInterfaces';
 
 import {actions} from './actions';
 

@@ -23,6 +23,8 @@ The app works this way:
 
 - #### adding-redux:
   In this branch we add `redux`, `redux-recompose` and `react-redux` to our newly created React Native (Typescript) project. In this branch the app implements a basic counter that increase/decrease based on two buttons that dispatch a basic action to Redux and updates the counter.
+- #### module-resolver:
+  In this branch we add `babel-plugin-module-resolver` to the project and update the settings and the `import` notation in source files.
 - #### redux-reactotron:
   In this branch we install and configure `Reactotron` to monitor the _Redux_ state and log info from the app.
 - #### redux-persistence:

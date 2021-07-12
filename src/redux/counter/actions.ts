@@ -1,5 +1,5 @@
 import {createTypes} from 'redux-recompose';
-import {Action} from '../../interfaces/reduxInterfaces';
+import {Action} from '@interfaces/reduxInterfaces';
 
 export const actions = createTypes(['UPDATE_COUNTER'], '@@COUNTER');
 

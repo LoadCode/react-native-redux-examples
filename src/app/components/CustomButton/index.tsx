@@ -7,9 +7,9 @@ import {
   ImageStyle,
   PressableStateCallbackType,
 } from 'react-native';
+import {primary, primaryHighLight} from '@constants/colors';
 
 import styles from './styles';
-import {primary, primaryHighLight} from '../../constants/colors';
 
 interface Props {
   style?: ViewStyle;
